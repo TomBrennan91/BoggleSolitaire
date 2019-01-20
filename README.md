@@ -1,7 +1,7 @@
 # BoggleSolitaire
 My Attempt at turning the Classic word game into a single player video game.
 
-![alt text](bogglescreenshot.png)
+![alt text](./bogglescreenshot.png)
 
 Key features:
 
