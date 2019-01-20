@@ -41,7 +41,8 @@ public class UserInterface implements ActionListener, Constants {
 	private JLabel totalScoreLabel;
 	private int highScore;
 	private JLabel highScoreLabel;
-	
+	JLabel time;
+	StopWatch eggTimer;
 	
 	UserInterface() {
 		round = 0;
@@ -89,6 +90,7 @@ public class UserInterface implements ActionListener, Constants {
 		allWords.setText("");
 		guessList.clear();
 		inputBox.setEditable(true);
+		eggTimer = new StopWatch(120, time, this);
 		score = 0;
 		incrementScore(0);
 		scoreLabel.setText("Score: " + score + "/" + target);
@@ -226,7 +228,7 @@ public class UserInterface implements ActionListener, Constants {
 		totalScoreLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		footer.add(totalScoreLabel);
 
-		JLabel time = new JLabel("Time: ");
+		time = new JLabel("Time: ");
 		time.setFont(new Font("Calibri", Font.BOLD, 35));
 		time.setHorizontalAlignment(SwingConstants.CENTER);
 		footer.add(time);

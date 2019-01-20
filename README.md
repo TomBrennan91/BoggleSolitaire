@@ -1,6 +1,8 @@
 # BoggleSolitaire
 My Attempt at turning the Classic word game into a single player video game.
 
+![alt text](bogglescreenshot.png)
+
 Key features:
 
  - TRIE SEARCH ALGORITHM:  the game utilises a special data structure called a TRIE to efficiently find all the available

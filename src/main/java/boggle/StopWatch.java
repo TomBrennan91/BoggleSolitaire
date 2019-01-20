@@ -5,11 +5,11 @@ import java.util.TimerTask;
 
 import javax.swing.JLabel;
 
-class StopWatch {
-	static Timer timer;
+public class StopWatch {
+	public static Timer timer;
 
 
-	StopWatch(final int seconds, final JLabel time, final UserInterface ui){
+	public StopWatch(final int seconds, final JLabel time, final UserInterface ui){
 		timer = new Timer();
 		timer.scheduleAtFixedRate(new TimerTask() {
 			int i = seconds;
